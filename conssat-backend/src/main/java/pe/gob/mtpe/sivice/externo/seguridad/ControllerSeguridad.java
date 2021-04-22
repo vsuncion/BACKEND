@@ -214,7 +214,7 @@ public class ControllerSeguridad {
 			usuario.setvAppaterno(vAppaterno);
 			usuario.setvApmaterno(vApmaterno);
 			usuario.setvNumdocumento(vNumdocumento);
-			usuario.setUsername(vCorreo);
+			usuario.setUsername(vCorreo.trim());
 			usuario.setPassword(encriptarclave.encode(vClave));
 			usuario.setTipodocumento(tipoDocumentos);
 			usuario.setRegiones(region);
