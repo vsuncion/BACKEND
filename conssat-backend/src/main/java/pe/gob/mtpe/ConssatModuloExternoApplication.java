@@ -23,7 +23,7 @@ public class ConssatModuloExternoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception { 
 		String clave = "12345";
-		log.error("===================="+clave);
+		//log.error("===================="+clave);
 		for(int i= 0;i<2;i++) {
 			String claveEncriptada = encriptarclave.encode(clave);
 			//System.out.println("=============="+claveEncriptada);

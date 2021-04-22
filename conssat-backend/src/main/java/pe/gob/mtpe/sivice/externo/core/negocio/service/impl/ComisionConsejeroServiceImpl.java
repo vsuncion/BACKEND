@@ -19,6 +19,7 @@ import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Tipoconsejero;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.repository.ComisionConsejeroDao;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.repository.ComisionDao;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.repository.ConsejeroDao;
+import pe.gob.mtpe.sivice.externo.core.accesodatos.repository.FijasDao;
 import pe.gob.mtpe.sivice.externo.core.negocio.service.ComisionConsejeroService; 
 
 @Service("ComisConsejeroService")
@@ -32,7 +33,8 @@ public class ComisionConsejeroServiceImpl implements ComisionConsejeroService {
 	private ComisionConsejeroDao comisiConsejeDao;
 	
 	@Autowired
-	private ComisionDao comisiondao;
+	private FijasDao  fijasDao;
+	//private ComisionDao comisiondao;
 	
 	@Autowired
 	private ConsejeroDao consejerodao;
@@ -67,7 +69,7 @@ public class ComisionConsejeroServiceImpl implements ComisionConsejeroService {
 			comsiones.setConsejo(consejo);
 			comsiones.setRegion(region);
 			comsiones.setcOmisionidpk(comision);
-			comsiones = comisiondao.consultaPorId(comsiones);
+			comsiones = fijasDao.consultaPorId(comsiones);
 			
 			if(comsiones!=null) {
 				

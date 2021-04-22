@@ -2,6 +2,7 @@ package pe.gob.mtpe.sivice.externo.core.accesodatos.repository;
 
 import java.util.List;
 
+import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Comisiones;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Consejos;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Entidades;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Profesiones;
@@ -46,6 +47,8 @@ public interface FijasDao {
 
 	// TIPOS DE COMISIONES
 	public List<TipoComisiones> listarTipoComisiones();
+	
+	public Comisiones consultaPorId(Comisiones comisiones);
 
 	public TipoComisiones buscarPorCodigoTipoComision(TipoComisiones comisiones);
 

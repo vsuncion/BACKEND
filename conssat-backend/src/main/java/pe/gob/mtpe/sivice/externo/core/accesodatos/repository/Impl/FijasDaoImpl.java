@@ -4,6 +4,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import org.springframework.stereotype.Component;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.base.BaseDao;
+import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Comisiones;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Consejos;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Entidades;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Profesiones;
@@ -367,6 +368,24 @@ public class FijasDaoImpl extends BaseDao<Long, Profesiones> implements FijasDao
 			return null;
 		}
 		return lista;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public Comisiones consultaPorId(Comisiones comisiones) {
+		Comisiones consultacomision = new Comisiones();
+		EntityManager manager = createEntityManager();
+		List<Comisiones> lista = manager
+				.createQuery("SELECT c FROM Comisiones c WHERE c.cOmisionidpk=:idcomision  AND c.cFlgeliminado=:eliminado")
+				.setParameter("idcomision", comisiones.getcOmisionidpk())
+				.setParameter("eliminado", ConstantesUtil.C_INDC_INACTIVO).getResultList();
+		manager.close();
+		
+		if(!lista.isEmpty()) {
+			consultacomision = lista.get(0);
+		}
+		
+		return consultacomision;
 	}
 
  
