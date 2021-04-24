@@ -76,4 +76,18 @@ public class ComisionConsejeroDaoImpl extends BaseDao<Long, ComiConsej> implemen
 		return lista;
 	}
 
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ComiConsej> buscarPorRegion(Long idRegion) {
+		EntityManager manager = createEntityManager();
+		List<ComiConsej> lista = manager
+				.createQuery("SELECT cs FROM ComiConsej cs  WHERE cs.comision.region.rEgionidpk=:codRegion AND cs.cFlgeliminado=:eliminado ORDER BY cs.comision.cOmisionidpk DESC")
+				.setParameter("codRegion", idRegion)
+				.setParameter("eliminado", ConstantesUtil.C_INDC_INACTIVO)
+				.getResultList();
+		manager.close();
+		return lista;
+	}
+
 }

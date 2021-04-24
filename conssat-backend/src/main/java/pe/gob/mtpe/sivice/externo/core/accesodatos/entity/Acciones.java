@@ -27,8 +27,8 @@ public class Acciones implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBS_ACCIONES") 
-	@SequenceGenerator(name="SEQ_TBS_ACCIONES",sequenceName="DB_TRAMITE.SEQ_TBS_ACCIONES", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBS_ACCIONES") 
+	@SequenceGenerator(name="SEQTBS_ACCIONES",sequenceName="SEQ_TBS_ACCIONES", allocationSize=1) 
 	@Column(name = "ACCIONES_ID_PK")
 	private Long aCcionesidpk;
  

@@ -23,8 +23,8 @@ public class CorrelativosComision implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_CORRELATIVO_COMISION") 
-	@SequenceGenerator(name="SEQ_CORRELATIVO_COMISION",sequenceName="DB_TRAMITE.SEQ_CORRELATIVO_COMISION", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQCORRELATIVO_COMISION") 
+	@SequenceGenerator(name="SEQCORRELATIVO_COMISION",sequenceName="SEQ_CORRELATIVO_COMISION", allocationSize=1) 
 	@Column(name = "CORRELATIVO_COMISION_ID_PK")
 	private Long correlativoComision;
 	

@@ -24,8 +24,8 @@ public class TipoComisiones implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_TIPO_COMISIONES") 
-	@SequenceGenerator(name="SEQ_TBX_TIPO_COMISIONES",sequenceName="DB_TRAMITE.SEQ_TBX_TIPO_COMISIONES", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_TIPO_COMISIONES") 
+	@SequenceGenerator(name="SEQTBX_TIPO_COMISIONES",sequenceName="SEQ_TBX_TIPO_COMISIONES", allocationSize=1) 
 	@Column(name = "TIPOCOMS_ID_PK")
 	private Long tIpocomsidpk;
 

@@ -26,8 +26,8 @@ public class EncargadoRegion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_ENCARGADO_REGION") 
-	@SequenceGenerator(name="SEQ_TBX_ENCARGADO_REGION",sequenceName="DB_TRAMITE.SEQ_TBX_ENCARGADO_REGION", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_ENCARGADO_REGION") 
+	@SequenceGenerator(name="SEQTBX_ENCARGADO_REGION",sequenceName="SEQ_TBX_ENCARGADO_REGION", allocationSize=1) 
 	@Column(name = "ENCARG_REGION_ID_PK")
 	private Long eNcargadoregionidpk;
 

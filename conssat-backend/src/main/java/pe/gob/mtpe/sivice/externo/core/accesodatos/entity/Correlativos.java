@@ -22,8 +22,8 @@ public class Correlativos implements Serializable  {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBS_CORRELATICOS") 
-	@SequenceGenerator(name="SEQ_TBS_CORRELATICOS",sequenceName="DB_TRAMITE.SEQ_TBS_CORRELATICOS", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBS_CORRELATICOS") 
+	@SequenceGenerator(name="SEQTBS_CORRELATICOS",sequenceName="SEQ_TBS_CORRELATICOS", allocationSize=1) 
 	@Column(name = "CORRELATIVO_ID_PK")
 	private Long cOrrelativoidpk;
 	

@@ -26,8 +26,8 @@ public class Profesiones implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_PROFESIONES") 
-	@SequenceGenerator(name="SEQ_TBX_PROFESIONES",sequenceName="DB_TRAMITE.SEQ_TBX_PROFESIONES", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_PROFESIONES") 
+	@SequenceGenerator(name="SEQTBX_PROFESIONES",sequenceName="SEQ_TBX_PROFESIONES", allocationSize=1) 
 	@Column(name = "PROFESION_ID_PK")
 	private Long pRofesionidpk;
 

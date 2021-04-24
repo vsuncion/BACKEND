@@ -25,6 +25,7 @@ import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.TipoSesiones;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.TipoTemas;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.entity.Tipoconsejero;
 import pe.gob.mtpe.sivice.externo.core.accesodatos.repository.FijasDao;
+import pe.gob.mtpe.sivice.externo.core.negocio.service.ComisionService;
 import pe.gob.mtpe.sivice.externo.core.negocio.service.FijasService;  
 import pe.gob.mtpe.sivice.externo.core.util.ConstantesUtil;
 
@@ -37,6 +38,9 @@ public class FijasServiceImpl implements FijasService {
 
 	@Autowired
 	private FijasDao fijasDao;
+	
+	@Autowired
+	private ComisionService comisionService;
 	
 	@Autowired
 	private JavaMailSender javaMailSender;

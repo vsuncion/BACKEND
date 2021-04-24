@@ -28,8 +28,8 @@ public class CorrelativosSesion  implements Serializable{
 	
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBS_CORRELATIVO_SESION") 
-	@SequenceGenerator(name="SEQ_TBS_CORRELATIVO_SESION",sequenceName="DB_TRAMITE.SEQ_CORRELATIVO_SESION", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBS_CORRELATIVO_SESION") 
+	@SequenceGenerator(name="SEQTBS_CORRELATIVO_SESION",sequenceName="SEQ_CORRELATIVO_SESION", allocationSize=1) 
 	@Column(name = "CORRELATIVO_SESION_ID_PK")
 	private Long correlativoSesion;
  

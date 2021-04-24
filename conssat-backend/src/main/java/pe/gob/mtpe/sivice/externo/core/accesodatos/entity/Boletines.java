@@ -28,8 +28,8 @@ public class Boletines implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_BOLETINES") 
-	@SequenceGenerator(name="SEQ_TBX_BOLETINES",sequenceName="DB_TRAMITE.SEQ_TBX_BOLETINES", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_BOLETINES") 
+	@SequenceGenerator(name="SEQTBX_BOLETINES",sequenceName="SEQ_TBX_BOLETINES", allocationSize=1) 
 	@Column(name = "BOLETIN_ID_PK")
 	private Long bOletinidpk;
 

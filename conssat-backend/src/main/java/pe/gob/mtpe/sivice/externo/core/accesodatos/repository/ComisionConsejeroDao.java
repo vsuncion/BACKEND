@@ -14,5 +14,6 @@ public interface ComisionConsejeroDao {
 	List<ComiConsej> listaConsejerosPorComision(Long idcomision);
 	
 	List<ComiConsej> buscar(Long comision);
+	List<ComiConsej> buscarPorRegion(Long idRegion);
 	
 }

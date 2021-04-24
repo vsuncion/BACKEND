@@ -28,8 +28,8 @@ public class Consejeros implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_TBX_CONSEJEROS")
-	@SequenceGenerator(name = "SEQ_TBX_CONSEJEROS", sequenceName = "DB_TRAMITE.SEQ_TBX_CONSEJEROS", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQTBX_CONSEJEROS")
+	@SequenceGenerator(name = "SEQTBX_CONSEJEROS", sequenceName = "SEQ_TBX_CONSEJEROS", allocationSize = 1)
 	@Column(name = "CONSEJERO_ID_PK")
 	private Long cOnsejeroidpk;
 

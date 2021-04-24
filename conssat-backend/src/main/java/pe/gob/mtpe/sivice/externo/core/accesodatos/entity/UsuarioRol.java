@@ -25,8 +25,8 @@ public class UsuarioRol implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_TBX_USUPERFROL")
-	@SequenceGenerator(name = "SEQ_TBX_USUPERFROL", sequenceName = "DB_TRAMITE.SEQ_TBX_USUPERFROL", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQTBX_USUPERFROL")
+	@SequenceGenerator(name = "SEQTBX_USUPERFROL", sequenceName = "SEQ_TBX_USUPERFROL", allocationSize = 1)
 	@Column(name = "USUARIOROL_ID_PK")
 	private Long uSuariorolidpk;
 

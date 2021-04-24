@@ -26,8 +26,8 @@ public class Acuerdos implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBS_ACUERDOS") 
-	@SequenceGenerator(name="SEQ_TBS_ACUERDOS",sequenceName="DB_TRAMITE.SEQ_TBS_ACUERDOS", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBS_ACUERDOS") 
+	@SequenceGenerator(name="SEQTBS_ACUERDOS",sequenceName="SEQ_TBS_ACUERDOS", allocationSize=1) 
 	@Column(name = "ACUERDO_ID_PK")
 	private Long aCuerdoidpk;
  

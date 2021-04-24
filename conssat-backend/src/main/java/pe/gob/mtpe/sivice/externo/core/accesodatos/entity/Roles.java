@@ -25,8 +25,8 @@ public class Roles implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_ROLES") 
-	@SequenceGenerator(name="SEQ_TBX_ROLES",sequenceName="DB_TRAMITE.SEQ_TBX_ROLES", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_ROLES") 
+	@SequenceGenerator(name="SEQTBX_ROLES",sequenceName="SEQ_TBX_ROLES", allocationSize=1) 
 	@Column(name = "ROL_ID_PK")
 	private Long rOlidpk;
 

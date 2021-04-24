@@ -20,4 +20,6 @@ public interface ComisionService {
 	List<Comisiones> buscarComision(Comisiones comisiones);
 	
 	Comisiones buscarComisionPorNombre(String nombre_comision,Long idregion);
+	
+	List<Comisiones> buscarComisionSesion(Comisiones comisiones);
 }

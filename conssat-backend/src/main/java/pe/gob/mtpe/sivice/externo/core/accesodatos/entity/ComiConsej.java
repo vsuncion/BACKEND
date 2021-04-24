@@ -27,8 +27,8 @@ public class ComiConsej implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBD_COMI_CONSEJ") 
-	@SequenceGenerator(name="SEQ_TBD_COMI_CONSEJ",sequenceName="DB_TRAMITE.SEQ_TBD_COMI_CONSEJ", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBD_COMI_CONSEJ") 
+	@SequenceGenerator(name="SEQTBD_COMI_CONSEJ",sequenceName="SEQ_TBD_COMI_CONSEJ", allocationSize=1) 
 	@Column(name = "COMI_CONS_ID_PK")
 	private Long cOmiconsidpk;
 	

@@ -22,4 +22,5 @@ public interface ComisionDao {
 	Comisiones consultaPorId(Comisiones comisiones);
 	
 	Comisiones buscarComisionPorNombre(String nombre_comision,Long idRegion);
+	 
 }

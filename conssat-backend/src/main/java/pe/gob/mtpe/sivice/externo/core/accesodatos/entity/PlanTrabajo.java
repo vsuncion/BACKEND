@@ -27,8 +27,8 @@ public class PlanTrabajo implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_PLAN_TRABAJO") 
-	@SequenceGenerator(name="SEQ_TBX_PLAN_TRABAJO",sequenceName="DB_TRAMITE.SEQ_TBX_PLAN_TRABAJO", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_PLAN_TRABAJO") 
+	@SequenceGenerator(name="SEQTBX_PLAN_TRABAJO",sequenceName="SEQ_TBX_PLAN_TRABAJO", allocationSize=1) 
 	@Column(name = "PLAN_TRAB_ID_PK")
 	private Long pLantrabidpk;
 

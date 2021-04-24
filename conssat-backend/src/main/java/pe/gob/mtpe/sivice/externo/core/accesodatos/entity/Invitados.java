@@ -26,8 +26,8 @@ public class Invitados implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_TBX_INVITADOS")
-	@SequenceGenerator(name = "SEQ_TBX_INVITADOS", sequenceName = "DB_TRAMITE.SEQ_TBX_INVITADOS", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQTBX_INVITADOS")
+	@SequenceGenerator(name = "SEQTBX_INVITADOS", sequenceName = "SEQ_TBX_INVITADOS", allocationSize = 1)
 	@Column(name = "INVITADOS_ID_PK")
 	private Long iNvitadosidpk;
 	

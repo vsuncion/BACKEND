@@ -401,6 +401,46 @@ public class ControladorComisiones {
 	}
 	
 	
+	@ApiOperation(value = "Buscar comision por su nombre")
+	@PostMapping("/buscarcomisionsesion")
+	public List<Comisiones> buscarComisionSesion(
+			@RequestParam(value = "nombrecomision") String nombrecomision,
+			@RequestHeader(name = "id_usuario", required = true) Long idUsuario,
+			@RequestHeader(name = "info_regioncodigo", required = true) Long idRegion,
+			@RequestHeader(name = "info_rol", required = true) String nombreRol) {
+		
+		List<Comisiones> lista = new ArrayList<Comisiones>();
+		try {
+			// ***** DATOS DE USUARIO DE INICIO DE SESION **********
+			Long codigoconsejo = fijasService.BuscarConsejoPorNombre(nombreRol); // CONSSAT
+
+			Consejos consejo = new Consejos();
+			consejo.setcOnsejoidpk(codigoconsejo);
+
+			Regiones region = new Regiones();
+			region.setrEgionidpk(idRegion);
+			// *******************************************************
+			
+			Comisiones generico = new Comisiones();
+			generico.setvCodcomision(nombrecomision);
+			generico.setConsejo(consejo);
+			generico.setRegion(region);
+			
+			lista = comisionService.buscarComisionSesion(generico);
+			
+		} catch (DataAccessException e) {
+			log.error("INICIA CODIGO REGION="+idRegion.toString()+"***********************");
+			SQLException sqle = (SQLException) e.getCause();
+			log.error("Codigo Error: " + sqle.getErrorCode());
+			log.error("Estado Sql: " + sqle.getSQLState());
+			log.error("Mensaje de Error: " +e.getMessage().concat(":").concat(e.getMostSpecificCause().getMessage()));
+			log.error("FIN ***************************************************************");
+		}
+ 
+		return lista;
+	}
+	
+	
 	
 	@ApiOperation(value = "descargar archivo de la comision")
 	@GetMapping("/descargar/{id}")

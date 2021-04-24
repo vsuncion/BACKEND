@@ -242,8 +242,7 @@ public class ComisionDaoImpl extends BaseDao<Long, Comisiones> implements Comisi
 		
 		return consultacomision;
 	}
-	
-	
 
+	 
 
 }

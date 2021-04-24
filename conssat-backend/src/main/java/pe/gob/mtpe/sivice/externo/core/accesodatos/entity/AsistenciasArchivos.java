@@ -23,8 +23,8 @@ public class AsistenciasArchivos implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_TBD_ASISTENCIA_ARCHIVO")
-	@SequenceGenerator(name = "SEQ_TBD_ASISTENCIA_ARCHIVO", sequenceName = "DB_TRAMITE.SEQ_TBD_ASISTENCIA_ARCHIVO", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQTBD_ASISTENCIA_ARCHIVO")
+	@SequenceGenerator(name = "SEQTBD_ASISTENCIA_ARCHIVO", sequenceName = "SEQ_TBD_ASISTENCIA_ARCHIVO", allocationSize = 1)
 	@Column(name = "ASISTE_ARCHIVO_ID_PK")
 	private Long aSistearchivoidpk;
 

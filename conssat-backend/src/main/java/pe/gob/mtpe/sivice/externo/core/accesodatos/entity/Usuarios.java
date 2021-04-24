@@ -27,8 +27,8 @@ public class Usuarios implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBX_USUARIOS") 
-	@SequenceGenerator(name="SEQ_TBX_USUARIOS",sequenceName="DB_TRAMITE.SEQ_TBX_USUARIOS", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBX_USUARIOS") 
+	@SequenceGenerator(name="SEQTBX_USUARIOS",sequenceName="SEQ_TBX_USUARIOS", allocationSize=1) 
 	@Column(name = "USUARIO_ID_PK")
 	private Long uSuarioidpk;
 

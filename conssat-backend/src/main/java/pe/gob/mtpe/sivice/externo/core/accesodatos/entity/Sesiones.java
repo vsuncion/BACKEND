@@ -26,8 +26,8 @@ public class Sesiones implements Serializable {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQ_TBC_SESION") 
-	@SequenceGenerator(name="SEQ_TBC_SESION",sequenceName="DB_TRAMITE.SEQ_TBC_SESION", allocationSize=1) 
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator="SEQTBC_SESION") 
+	@SequenceGenerator(name="SEQTBC_SESION",sequenceName="SEQ_TBC_SESION", allocationSize=1) 
 	@Column(name = "SESION_ID_PK")
 	private Long sEsionidpk;
 
